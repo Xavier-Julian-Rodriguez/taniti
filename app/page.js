@@ -1,95 +1,70 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Card from "../components/Card";
+import ImageCard from "../components/ImageCard";
+import CallToAction from "../components/CallToAction";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className={styles.hero}>
+        <div className={styles.heroBookContainer}>
+          <p>book form goes here</p>
+        </div>
+        <div className={styles.heroImageContainer}>
+          <Image
+            className={styles.heroImage}
+            src="/hero.webp"
+            alt="french polynesian beach"
+            fill
+            priority
+            style={{ objectFit: "cover" }}
+          />
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <div className={styles.rowFlex}>
+        <Card
+          image="/birdEyeView.webp"
+          alt="birds eye view of taniti island"
+          text="Taniti is a Pacific island that is 500-square miles. Explore the unspoiled island and immerse yourself in the rich culture."
+        />
+        <Card
+          image="/tanitian.webp"
+          alt="tanitian person holding a floral lei"
+          text="Taniti currently has an indigenous population of 20,000 where the culture has been passed down for generations. Art, music, and dance are a part of everyday life in Taniti. "
+        />
+        <Card
+          image="/fishing.webp"
+          alt="people fishing on the beach during sunset"
+          text="Taniti, once a serene island where agriculture and fishing sustained its population has transformed into a must-see tourist haven. Many visitors from around the world come to experience Taniti's pristine beaches for fishing, snorkeling, and peaceful strolls along the shore."
         />
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className={styles.rowFlex}>
+        <ImageCard
+          image="/zipline.webp"
+          alt="a person zip lining down a tree in the rainforest"
+          heading="Things To Do"
+          buttonTxt="Learn More"
+        />
+        <ImageCard
+          image="/seafood.webp"
+          alt="a plate of seafood with a glass of white wine"
+          heading="Dining"
+          buttonTxt="Learn More"
+        />
+        <ImageCard
+          image="/rideshare.webp"
+          alt="an arm viewing a rideshare phone application on mobile device"
+          heading="Transportation"
+          buttonTxt="Learn More"
+        />
       </div>
+      <CallToAction
+        img="/volcano.webp"
+        alt="man wearing a rain jacket observing a volcano"
+        heading="Explore an adventure of the senses in Taniti"
+        btnText="Discover"
+      />
     </main>
   );
 }

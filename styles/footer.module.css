@@ -1,0 +1,36 @@
+.container {
+  width: 90%;
+  padding: 0 5%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: solid 0.25px rgba(0, 0, 0, 0.2);
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+}
+.h3Element {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding-bottom: 2rem;
+  width: fit-content;
+}
+
+.link:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+}

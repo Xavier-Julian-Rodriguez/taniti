@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #aff4c6;
+  margin-bottom: 1rem;
+  padding: 5rem 9rem;
+  column-gap: 12px;
+}
+
+.imgContainer {
+  width: 60%;
+  display: flex;
+}
+
+.img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.ctaContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+  padding: 3rem;
+}
+.h2Element {
+  font-size: 1.75rem;
+  padding-bottom: 3%;
+}
