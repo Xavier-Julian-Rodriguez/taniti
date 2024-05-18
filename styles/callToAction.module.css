@@ -6,7 +6,7 @@
   justify-content: center;
   background-color: #aff4c6;
   margin-bottom: 1rem;
-  padding: 5rem 9rem;
+  padding: 5rem 10%;
   column-gap: 12px;
 }
 
@@ -28,9 +28,25 @@
   align-items: center;
   width: 40%;
   text-align: center;
-  padding: 3rem;
+  padding: 3%;
 }
 .h2Element {
   font-size: 1.75rem;
   padding-bottom: 3%;
+}
+@media (min-width: 701px) and (max-width: 1120px) {
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+    .imgContainer, .ctaContainer {
+        width: 100%;
+    }
+    .h2Element {
+        padding: 3%;
+    }
+
 }

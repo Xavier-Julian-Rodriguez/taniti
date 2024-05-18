@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  min-height: 400px;
+}
+.h1 {
+  font-size: 3rem;
+  color: #000000;
+  padding: 3rem 5%;
+}
+.text {
+  padding: 3rem 5% !important;
+}
+.blue {
+  background-color: #0a99ff;
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+@media (max-width: 700px) {
+}

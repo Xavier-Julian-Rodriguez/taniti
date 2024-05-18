@@ -1,0 +1,32 @@
+.rowFlex {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5%;
+  width: 100%;
+  justify-content: space-between;
+  column-gap: 12px;
+}
+
+.blue {
+  background-color: #0a99ff;
+}
+
+.h1 {
+  font-size: 3rem;
+  color: #000000;
+  padding: 5%;
+}
+
+.list {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.li {
+  padding-bottom: 24px;
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+}
+@media (max-width: 700px) {
+}

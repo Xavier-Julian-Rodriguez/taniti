@@ -42,17 +42,42 @@ export default function BasicTabs() {
 
   return (
     <Box className={styles.container} sx={{ width: "90%" }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+      <Box className={styles.box} sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="HOME" {...a11yProps(0)} />
-          <Tab label="ABOUT" {...a11yProps(2)} />
-          <Tab label="THINGS TO DO" {...a11yProps(1)} />
-          <Tab label="FAQ" {...a11yProps(1)} />
-          <Tab label="CONTACT" {...a11yProps(1)} />
+          <Tab
+            className={styles.label}
+            label="HOME"
+            {...a11yProps(0)}
+            href="/"
+          />
+          <Tab
+            className={styles.label}
+            label="ABOUT"
+            {...a11yProps(1)}
+            href="/about"
+          />
+          <Tab
+            className={styles.label}
+            label="THINGS TO DO"
+            {...a11yProps(2)}
+            href="/things-to-do"
+          />
+          <Tab
+            className={styles.label}
+            label="FAQ"
+            {...a11yProps(3)}
+            href="/faq"
+          />
+          <Tab
+            className={styles.label}
+            label="CONTACT"
+            {...a11yProps(4)}
+            href="/contact"
+          />
         </Tabs>
       </Box>
     </Box>

@@ -12,11 +12,10 @@ export default function Home() {
           <p>book form goes here</p>
         </div>
         <div className={styles.heroImageContainer}>
-          <Image
+          <img
             className={styles.heroImage}
             src="/hero.webp"
             alt="french polynesian beach"
-            fill
             priority
             style={{ objectFit: "cover" }}
           />
@@ -60,9 +59,9 @@ export default function Home() {
         />
       </div>
       <CallToAction
-        img="/volcano.webp"
-        alt="man wearing a rain jacket observing a volcano"
-        heading="Explore an adventure of the senses in Taniti"
+        img="/tanetian.webp"
+        alt="taniti woman wearing a lei"
+        heading="Rich Culture Passed Down Many Generations"
         btnText="Discover"
       />
     </main>
