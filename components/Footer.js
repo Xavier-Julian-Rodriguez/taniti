@@ -42,7 +42,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className={styles.author}>
-        <h3 className={styles.h3Element}>Site Created By</h3>
+        <h3 className={styles.h3Element}>Site Designed & Developed By</h3>
         <ul className={styles.list}>
           <a
             className={styles.link}

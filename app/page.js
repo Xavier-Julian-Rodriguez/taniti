@@ -44,18 +44,21 @@ export default function Home() {
           alt="a person zip lining down a tree in the rainforest"
           heading="Things To Do"
           buttonTxt="Learn More"
+          link="/things-to-do"
         />
         <ImageCard
           image="/seafood.webp"
           alt="a plate of seafood with a glass of white wine"
           heading="Dining"
           buttonTxt="Learn More"
+          link="/things-to-do#dining"
         />
         <ImageCard
           image="/rideshare.webp"
           alt="an arm viewing a rideshare phone application on mobile device"
           heading="Transportation"
           buttonTxt="Learn More"
+          link="/things-to-do#transportation"
         />
       </div>
       <CallToAction
