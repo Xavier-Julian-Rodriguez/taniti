@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
@@ -26,6 +27,12 @@ function CustomTabPanel(props) {
   );
 }
 
+CustomTabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
@@ -33,7 +40,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs() {
+export default function BasicTabs(window) {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -42,11 +49,15 @@ export default function BasicTabs() {
 
   return (
     <Box className={styles.container} sx={{ width: "90%" }}>
-      <Box className={styles.box} sx={{ borderBottom: 1, borderColor: "divider" }}>
+      <Box
+        className={styles.box}
+        sx={{ borderBottom: 1, borderColor: "divider" }}
+      >
         <Tabs
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
+          className={styles.tabs}
         >
           <Tab
             className={styles.label}
