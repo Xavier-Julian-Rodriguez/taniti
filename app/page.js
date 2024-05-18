@@ -63,6 +63,7 @@ export default function Home() {
         alt="taniti woman wearing a lei"
         heading="Rich Culture Passed Down Many Generations"
         btnText="Discover"
+        link="/about"
       />
     </main>
   );

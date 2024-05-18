@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../../styles/footer.module.css";
+import CallToAction from "@/components/CallToAction";
 
 const ContactPage = () => {
   return (
@@ -12,7 +13,6 @@ const ContactPage = () => {
           color: "#000000",
           padding: "3rem 10% !important",
           backgroundColor: "#0a99ff",
-
         }}
       >
         Contact
@@ -53,6 +53,13 @@ const ContactPage = () => {
           </ul>
         </div>
       </div>
+      <CallToAction
+        img="/hotel.webp"
+        alt="woman taking a photo of a waterfall"
+        heading="Ready To Book Your Trip To Paradise?"
+        btnText="Book"
+        link="/"
+      />
     </>
   );
 };

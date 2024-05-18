@@ -2,12 +2,13 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 
-export default function ButtonSizes({ buttonText }) {
+export default function ButtonSizes({ buttonText, links }) {
   return (
     <Box sx={{ "& button": { m: 1 } }}>
       <Button
         variant="contained"
         size="medium"
+        href={links}
         sx={{
           padding: "8px 16px !important",
           margin: "0 100px !important",

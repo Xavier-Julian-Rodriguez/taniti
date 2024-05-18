@@ -67,15 +67,16 @@ const Things = () => {
       <h2 className={styles.h2}>Transportation</h2>
 
       <div className={styles.rowFlex}>
-        <Card image="/hero.webp" text="text" alt="" />
-        <Card image="/hero.webp" text="text" alt="" />
-        <Card image="/hero.webp" text="text" alt="" />
+        <Card image="/plane.webp" text="text" alt="" />
+        <Card image="/cruiseship.webp" text="text" alt="" />
+        <Card image="/uber.webp" text="text" alt="" />
       </div>
       <CallToAction
         img="/sightseeing.webp"
         alt="woman taking a photo of a waterfall"
         heading="Frequently Requested Information"
         btnText="Read"
+        link="/faq"
       />
     </>
   );

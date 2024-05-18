@@ -16,8 +16,8 @@ const About = () => {
           Taniti is a charming, paradise island in the Pacific spanning just 500
           square miles. The terrain is diverse featuring lush rainforests, a
           small harbor, a mountainous interior with an active volcano, and both
-          sandy and rocky beach. In the past, Taniti`s economy solely relied on
-          fishing and agriculture. Recent tourism growth has been responsible
+          sandy and rocky beaches. In the past, Taniti`s economy solely relied
+          on fishing and agriculture. Recent tourism growth has been responsible
           for transforming the scenic island. Taniti is currenly home to around
           20,000 indigenous residents.
         </p>
@@ -27,6 +27,7 @@ const About = () => {
         alt="man wearing a rain jacket observing a volcano"
         heading="Explore an adventure of the senses in Taniti"
         btnText="Discover"
+        link="/things-to-do"
       />
     </>
   );
