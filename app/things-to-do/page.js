@@ -33,16 +33,36 @@ const Things = () => {
       <h1 className={styles.h1Element}>Things To Do</h1>
       <h2 className={styles.h2}>Dining</h2>
       <div className={styles.rowFlex}>
-        <Card image="/hero.webp" text="text" alt="" />
-        <Card image="/hero.webp" text="text" alt="" />
-        <Card image="/hero.webp" text="text" alt="" />
+        <Card
+          image="/panAsian.webp"
+          text="a pan asian meal"
+          alt="a pan asian meal"
+        />
+        <Card
+          image="/seafoodChef.webp"
+          text="a chef pouring seafood from pot to plate"
+          alt="a chef pouring seafood from pot to plate"
+        />
+        <Card
+          image="/steak.webp"
+          text="a steak meal with asparagus"
+          alt="a steak meal with asparagus"
+        />
       </div>
-      <h2 className={styles.h2}>Activities</h2>
+      <h2 className={styles.h2}>Activities, Lodging, and Shopping</h2>
 
       <div className={`${styles.rowFlex} ${styles.green}`}>
-        <Card image="/hero.webp" text="text" alt="" />
-        <Card image="/hero.webp" text="text" alt="" />
-        <Card image="/hero.webp" text="text" alt="" />
+        <Card
+          image="/snorkel.webp"
+          text="text"
+          alt="a man and woman snorkeling and filming a shark"
+        />
+        <Card image="/hotel.webp" text="text" alt="a four star island hotel" />
+        <Card
+          image="/convenienceStore.webp"
+          text="text"
+          alt="dairy beverages sittong on shelves"
+        />
       </div>
       <h2 className={styles.h2}>Transportation</h2>
 
