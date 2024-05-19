@@ -31,20 +31,24 @@ export default function Home() {
             priority
             style={{ objectFit: "cover" }}
           />
+          <p className={styles.source}>image source: </p>
         </div>
       </div>
       <div className={styles.rowFlex}>
         <Card
+          heading="image source: "
           image="/birdEyeView.webp"
           alt="birds eye view of taniti island"
           text="Taniti is a Pacific island that is 500-square miles. Explore the unspoiled island and immerse yourself in the rich culture."
         />
         <Card
+          heading="image source: "
           image="/tanitian.webp"
           alt="tanitian person holding a floral lei"
           text="Taniti currently has an indigenous population of 20,000 where the culture has been passed down for generations. Art, music, and dance are a part of everyday life in Taniti. "
         />
         <Card
+          heading="image source: "
           image="/fishing.webp"
           alt="people fishing on the beach during sunset"
           text="Taniti, once a serene island where agriculture and fishing sustained its population has transformed into a must-see tourist haven. Many visitors from around the world come to experience Taniti's pristine beaches for fishing, snorkeling, and peaceful strolls along the shore."

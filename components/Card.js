@@ -12,11 +12,11 @@ export default function ActionAreaCard({ image, heading, text, alt }) {
     <Card sx={{ width: "33%" }} className={styles.card}>
       <CardActionArea>
         <CardMedia component="img" height="250" image={image} alt={alt} />
-        <CardContent sx={{ padding: "3rem 1rem !important" }}>
-          <Typography gutterBottom variant="h5" component="div">
+        <CardContent sx={{ padding: "0rem 5% 5% 5% !important" }}>
+          <Typography gutterBottom variant="body3" component="div">
             {heading}
           </Typography>
-          <Typography variant="body1" color="text.secondary">
+          <Typography variant="body1" color="text.secondary" sx={{paddingTop:"3rem !important"}}>
             {text}
           </Typography>
         </CardContent>
