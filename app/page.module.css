@@ -27,8 +27,20 @@
   width: 40%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  row-gap: 12px;
+}
+
+.h1,
+.heroH2,
+.heroText {
+  color: #ffffff;
+  text-align: center;
+}
+.heroText {
+  padding: 2% 10%;
 }
 .heroImageContainer {
   width: 60%;
@@ -85,6 +97,9 @@
     min-height: 0;
     margin-bottom: 0;
   }
+  .h1 {
+    padding-top: 10%;
+  }
 
   .heroBookContainer {
     width: 90%;
@@ -92,8 +107,9 @@
   .heroImageContainer {
     width: 100%;
     height: 400px;
+    padding-top: 5%;
   }
-  
+
   .heroImage {
     height: 400px !important;
     width: 100%;

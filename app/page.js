@@ -1,15 +1,27 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Card from "../components/Card";
 import ImageCard from "../components/ImageCard";
 import CallToAction from "../components/CallToAction";
+import Date from "../components/date";
+import Button from "../components/Button";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.hero}>
         <div className={styles.heroBookContainer}>
-          <p>book form goes here</p>
+          <h1 className={styles.h1}>Book Your Next Trip</h1>
+          <h2 className={styles.heroH2}>
+            Come Stay At The Scenic & Vibrant Taniti
+          </h2>
+          <p className={styles.heroText}>
+            Select your departure date and your return date to view available
+            flights, hotels, and car rentals.
+          </p>
+          <Date />
+          <Button links="/" buttonText="Search" />
         </div>
         <div className={styles.heroImageContainer}>
           <img
