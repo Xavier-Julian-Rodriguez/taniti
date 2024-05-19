@@ -41,14 +41,14 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-    .container {
-        flex-direction: column;
-    }
-    .imgContainer, .ctaContainer {
-        width: 100%;
-    }
-    .h2Element {
-        padding: 3%;
-    }
-
+  .container {
+    flex-direction: column;
+  }
+  .imgContainer,
+  .ctaContainer {
+    width: 100%;
+  }
+  .h2Element {
+    padding: 3%;
+  }
 }

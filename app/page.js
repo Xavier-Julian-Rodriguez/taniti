@@ -45,7 +45,7 @@ export default function Home() {
           heading={
             <>
               `image source: Bellanger, F. (January 28, 2024). Unsplash{" "}
-              <Link href="https://unsplash.com/photos/a-lagoon-with-a-boat-in-it-surrounded-by-palm-trees-TOvYrc0D9y4">
+              <Link href="https://unsplash.com/photos/an-aerial-view-of-a-tropical-island-with-a-beach-RxdDueC6e1U">
                 LINK
               </Link>
               `
@@ -90,6 +90,14 @@ export default function Home() {
           heading="Things To Do"
           buttonTxt="Learn More"
           link="/things-to-do"
+          srcLink={
+            <>
+              Outward Bound Costa Rica (January 24, 2024). Unsplash.{" "}
+              <Link href="https://unsplash.com/photos/a-man-riding-a-zip-line-through-a-lush-green-forest-egQLkwxLKDs">
+                LINK
+              </Link>
+            </>
+          }
         />
         <ImageCard
           image="/seafood.webp"
@@ -97,6 +105,14 @@ export default function Home() {
           heading="Dining"
           buttonTxt="Learn More"
           link="/things-to-do#dining"
+          srcLink={
+            <>
+              Kalina, A. (April 24, 2021). Unsplash.{" "}
+              <Link href="https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-tQWvZi0Fh48">
+                LINK
+              </Link>
+            </>
+          }
         />
         <ImageCard
           image="/rideshare.webp"
@@ -104,6 +120,14 @@ export default function Home() {
           heading="Transportation"
           buttonTxt="Learn More"
           link="/things-to-do#transportation"
+          srcLink={
+            <>
+              Tingey Injury Law Firm (March 16, 2021). Unsplash.{" "}
+              <Link href="https://unsplash.com/photos/person-holding-black-iphone-5-rv9NXAvl2gg">
+                LINK
+              </Link>
+            </>
+          }
         />
       </div>
       <CallToAction
@@ -112,7 +136,15 @@ export default function Home() {
         heading="Rich Culture Passed Down Many Generations"
         btnText="Discover"
         link="/about"
-        sourceLink={<>`Raponi, M. (May 02, 2015). Pixabay. <Link href="https://pixabay.com/photos/floral-head-dress-french-polynesia-750652/">LINK</Link>`</>}
+        sourceLink={
+          <>
+            `Raponi, M. (May 02, 2015). Pixabay.{" "}
+            <Link href="https://pixabay.com/photos/floral-head-dress-french-polynesia-750652/">
+              LINK
+            </Link>
+            `
+          </>
+        }
       />
     </main>
   );
