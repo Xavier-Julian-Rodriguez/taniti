@@ -2,6 +2,7 @@
 
 import styles from "../../styles/footer.module.css";
 import CallToAction from "@/components/CallToAction";
+import Link from "next/link";
 
 const ContactPage = () => {
   return (
@@ -59,6 +60,14 @@ const ContactPage = () => {
         heading="Ready To Book Your Trip To Paradise?"
         btnText="Book"
         link="/"
+        sourceLink={
+          <>
+            Ko, J. (May 17, 2022). Unsplash.{" "}
+            <Link href="https://unsplash.com/photos/a-lagoon-with-a-boat-in-it-surrounded-by-palm-trees-TOvYrc0D9y4">
+              LINK
+            </Link>
+          </>
+        }
       />
     </>
   );

@@ -2,6 +2,7 @@
 
 import styles from "./faq.module.css";
 import CallToAction from "@/components/CallToAction";
+import Link from "next/link";
 
 const Faq = () => {
   return (
@@ -50,6 +51,14 @@ const Faq = () => {
         heading="Do You Require Customer Support?"
         btnText="Go"
         link="/contact"
+        sourceLink={
+          <>
+            Canas, R. (February 02, 2021). Pixabay.{" "}
+            <Link href="https://pixabay.com/photos/receptionist-man-hotel-work-5975961/">
+              LINK
+            </Link>
+          </>
+        }
       />
     </>
   );

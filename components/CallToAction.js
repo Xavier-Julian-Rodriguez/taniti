@@ -9,7 +9,7 @@ const CallToAction = ({ img, alt, heading, btnText, link, sourceLink }) => {
     <div className={styles.container}>
       <div className={styles.imgContainer}>
         <img src={img} alt={alt} className={styles.img} />
-        <p>image source: {sourceLink}</p>
+        <p style={{fontSize:"12px"}}>image source: {sourceLink}</p>
       </div>
       <div className={styles.ctaContainer}>
         <h2 className={styles.h2Element}>{heading}</h2>

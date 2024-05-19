@@ -15,6 +15,12 @@ const Things = () => {
             src="/seafood.webp"
             alt="a plate of seafood with a glass of white wine"
           />
+          <p style={{ fontSize: "12px" }}>
+            image source: Kalina, A. (April 24, 2021). Unsplash.{" "}
+            <Link href="https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-tQWvZi0Fh48">
+              LINK
+            </Link>
+          </p>
         </div>
         <div className={styles.imgContainer}>
           <img
@@ -22,6 +28,12 @@ const Things = () => {
             src="/zipline.webp"
             alt="a person zip lining down a tree in the rainforest"
           />
+          <p style={{ fontSize: "12px" }}>
+            image source: Outward Bound Costa Rica (January 24, 2024). Unsplash.{" "}
+            <Link href="https://unsplash.com/photos/a-man-riding-a-zip-line-through-a-lush-green-forest-egQLkwxLKDs">
+              LINK
+            </Link>
+          </p>
         </div>
         <div className={styles.imgContainer}>
           <img
@@ -29,6 +41,12 @@ const Things = () => {
             src="/rideshare.webp"
             alt="an arm viewing a rideshare phone application on mobile device"
           />
+          <p style={{ fontSize: "12px" }}>
+            image source: Tingey Injury Law Firm (March 16, 2021). Unsplash.{" "}
+            <Link href="https://unsplash.com/photos/person-holding-black-iphone-5-rv9NXAvl2gg">
+              LINK
+            </Link>
+          </p>
         </div>
         <h1 className={styles.h1Element}>Things To Do</h1>
       </div>
@@ -170,7 +188,14 @@ const Things = () => {
         heading="Frequently Requested Information"
         btnText="Read"
         link="/faq"
-        sourceLink={<>Macdonald, B. (December 26, 2020). Unsplash. <Link href="https://unsplash.com/photos/man-in-black-jacket-taking-photo-of-waterfalls-during-daytime-fJmt_spjCX4">LINK</Link></>}
+        sourceLink={
+          <>
+            Macdonald, B. (December 26, 2020). Unsplash.{" "}
+            <Link href="https://unsplash.com/photos/man-in-black-jacket-taking-photo-of-waterfalls-during-daytime-fJmt_spjCX4">
+              LINK
+            </Link>
+          </>
+        }
       />
     </>
   );
