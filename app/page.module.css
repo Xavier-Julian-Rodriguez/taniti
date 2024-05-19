@@ -93,7 +93,7 @@
 @media (max-width: 700px) {
   .hero {
     flex-direction: column;
-    padding: 0%;
+    padding: 0% 0% 5% 0%;
     min-height: 0;
     margin-bottom: 0;
   }

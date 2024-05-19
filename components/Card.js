@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import styles from "../styles/card.module.css"
+import styles from "../styles/card.module.css";
 
 export default function ActionAreaCard({ image, heading, text, alt }) {
   return (
